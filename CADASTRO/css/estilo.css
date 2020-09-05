@@ -1,0 +1,47 @@
+
+body{
+    text-align: center;
+    background-image:url("/../img/background-1000x500.jpg");
+    background-color:white
+    
+}
+
+label {
+    text-align: center;
+    width: 8em
+}
+
+.obrigatorio {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 25px;
+   
+}
+
+.alin {
+    width: 20em;
+}
+
+.nascimento {
+    margin-left: 10em;
+}
+
+
+.sexo {
+    margin-left: 20em;
+    
+}
+
+.input{
+    
+    color: blue;
+    margin-left: 5em;
+}
+
+
+
+.teste {
+    
+    margin-left: 80em;
+   
+}

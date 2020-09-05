@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>FORMULARIO</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilo.css" media="screen">
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">Cadastro de Cliente</a>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 navbar-light bg-dark"  type="submit">Search</button>
+                    </form>
+                </div>
+        </header>
+    
+        
+        <form>
+            
+             <p class="obrigatorio">*Campo Obrigatório</label>
+            
+                <div class="form-group">                
+                    <div class="input-group-prepend">
+                        <label for="name">Nome *</label>
+                        
+                        <input type="text" name="nome" id="nome" size="110" maxlength="50" required placeholder="Insira seu nome completo" autofocus>
+                    </div>
+                </div>
+
+            
+                <div class="form-group">
+                    <div class="input-group-prepend">
+                        <label for="cpf">CPF *</label>
+                        <input type="text" name="cpf" id="cpf" maxlength="11" size="38" required placeholder="Apenas números">
+            
+                        <div class="nascimento">
+                            <label for="date">Nascimento *</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+
+                        <div class="sexo">
+                            <label for="sexo">Sexo *</label>
+                            <input type="radio" name="sexo" id="sexo"> Masculino &nbsp&nbsp
+                            <input type="radio" name="sexo" id="sexo">&nbsp;Feminino
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">  
+                    <div class="input-group">
+                      <label for="tel">Telefone *</label>
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><span class="material-icons">phone</span></div>
+                        </div>                    
+                            <input type="tel" class="form-control col-2" name="tel" id="tel" placeholder="XXX XXXX-XXXX">&nbsp&nbsp
+                        
+                            <label for="tel">Telefone </label>
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><span class="material-icons">phone</span></div>
+                                </div>                    
+                            <input type="tel" class="form-control col-2" name="tel" id="tel" placeholder="XXX XXXX-XXXX">
+                        
+                    </div>              
+                  </div>
+
+                  <div class="form-group"> 
+                    <div class="input-group">
+                      <label for="cep">CEP  *</label>
+                        <input type="text" name="cep" id="cep" size="38" maxlength="9" placeholder="Apenas números" required>&nbsp&nbsp&nbsp
+                        <input type="button" class="btn btn-primary" value="Pesquisar">
+                    </div>  
+                  </div>
+
+                  <div class="form-group">                
+                    <div class="input-group">
+                        <label for="email">Email *</label>
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><span class="material-icons">mail</span></div>
+                      </div>
+                      <input type="email" class="form-control col-6" id="email" placeholder="email@gmail.com">
+                    </div>
+                  </div>
+
+                  <div class="form-group">                
+                    <div class="input-group">
+                      <label for="endereco">Endereço *</label>
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Bairro</div>
+                      </div>
+                      <input class="form-control col-3" id="Cidade">&nbsp&nbsp&nbsp;
+                     
+                      <div class="input-group-prepend">
+                          <div class="input-group-text">Cidade</div>
+                      </div>
+                        <input class="form-control col-2" id="rua">&nbsp&nbsp&nbsp;
+    
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Estado</div>
+                    </div>
+                      <input class="form-control col-3" id="bairro">
+                    </div>
+                </div>
+                
+                <div class="form-group">                
+                    <div class="input-group">
+                        <label>Estado Civil *</label>
+                        <div class="form-group col-md-4">
+                            <select id="inputState" class="form-control">
+                                <option>Solteiro(a)</option>
+                                <option>Casado(a)</option>
+                                <option>Divorciado(a)</option>
+                                <option selected></option>
+                            </select>
+                          </div>
+
+                          <label for="filho">Filhos *</label>
+                          <div class="col-sm-3 my-1">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="radio" name="filho">&nbspNão&nbsp;
+                                    <input type="radio" name="filho">&nbspSim
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Quantos?">
+                            </div>
+                          </div>
+                            
+                    </div>
+                </div>
+                <div class="form-group">                
+                    <div class="input-group">
+                        
+                        <label>Escolaridade *</label>
+                        <div class="form-group col-md-4">
+                            <select id="inputState" class="form-control">
+                                <option>Ensino Fundamental</option>
+                                <option>Ensino Médio</option>
+                                <option>Ensino Superior</option>
+                                <option selected></option>
+                            </select>
+                          </div>
+
+                          <label for="filho">Profissão *</label>
+                          <div class="col-sm-3 my-1">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    Sua Profissão?
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="">
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+                <div class="form-group">                
+                    <div class="input-group">
+                        
+                        <label for="filho">Encaminhamento*</label>
+                          <div class="col-sm-3 my-1">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="radio" name="filho">&nbspNão &nbsp
+                                    <input type="radio" name="filho">&nbspSim
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Instituição?">
+                            </div>
+                          </div>
+
+                          <label for="filho">Aluno FAP-<br>Betim *</label>
+                          <div class="col-sm-3 my-1">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="radio" name="filho">&nbspNão &nbsp
+                                    <input type="radio" name="filho">&nbspSim
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Curso">
+                            </div>
+                          </div>
+
+                    </div>
+                        
+                </div>
+
+                <div class="form-group">                
+                    <div class="input-group">
+
+                        </P>Como ficou sabendo da clinica?<P>
+                        <div class="form-group col-md-4">
+                            <select id="inputState" class="form-control">
+                                <option>Internet?</option>
+                                <option selected>Redes Sociais?</option>
+                                <option>Jornal?</option>
+                            </select>
+                          </div>
+                        
+                    </div>
+                </div>
+                <div class="form-group">                
+                    <div class="input-group-prepend">
+                        <label for="name">Nome *</label>
+                      
+                        <input type="text" name="nome" id="nome" size="115" maxlength="50" required placeholder="Insira seu nome completo">
+                    </div>
+                </div>
+
+            
+                <div class="form-group">
+                    <div class="input-group-prepend">
+                        <p class="vinculo">Vinculo com o cliente *</p>&nbsp;&nbsp;
+                        <input type="text" name="vinculo" id="vinculo" maxlength="30" size="38">
+            
+                        <div class="nascimento">
+                            <label for="date">Nascimento *</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+
+                        <div class="sexo">
+                            <label for="sexo">Sexo *</label>
+                            <input type="radio" name="sexo" id="sexo"> Masculino &nbsp&nbsp
+                            <input type="radio" name="sexo" id="sexo">&nbsp;Feminino
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">                
+                    <div class="input-group">
+                        <label>Estado Civil *</label>
+                        <div class="form-group col-md-4">
+                            <select id="inputState" class="form-control">
+                                <option>Solteiro(a)</option>
+                                <option>Casado(a)</option>
+                                <option>Divorciado(a)</option>
+                                <option selected></option>
+                            </select>
+                          </div>
+
+                          <label for="filho">Filhos *</label>
+                          <div class="col-sm-3 my-1">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="radio" name="filho">&nbspNão &nbsp
+                                    <input type="radio" name="filho">&nbspSim
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Quantos?">
+                            </div>
+                          </div>
+                            
+                    </div>
+                </div>
+                <div class="form-group">                
+                    <div class="input-group">
+                        
+                        <label>Escolaridade *</label>
+                        <div class="form-group col-md-4">
+                            <select id="inputState" class="form-control">
+                                <option>Ensino Medio</option>
+                                <option>Ensino Fundamental</option>
+                                <option>Ensino Superior</option>
+                                <option selected></option>
+                            </select>
+                          </div>
+
+                          <label for="filho">Profissão *</label>
+                          <div class="col-sm-3 my-1">
+                            <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    Sua Profissão?
+                                </div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="">
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+                <div class="form-group">  
+                    <div class="input-group">
+                      <label for="tel">Telefone *</label>
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><span class="material-icons">phone</span></div>
+                        </div>                    
+                            <input type="tel" class="form-control col-2" name="tel" id="tel" placeholder="XXX XXXX-XXXX">&nbsp&nbsp
+                        
+                            <label for="tel">Telefone </label>
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><span class="material-icons">phone</span></div>
+                                </div>                    
+                            <input type="tel" class="form-control col-2" name="tel" id="tel" placeholder="XXX XXXX-XXXX">
+                        
+                    </div>              
+                  </div>
+                  <div class="form-group">                
+                    <div class="input-group">
+                        <label for="email">Email *</label>
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><span class="material-icons">mail</span></div>
+                      </div>
+                      <input type="email" class="form-control col-6" id="email" placeholder="email@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group">  
+                    <div class="input-group">
+                        <div class="teste">
+                        <input class="btn btn-outline-success" type="submit" value="Cadastrar">
+                        <input class="btn btn-outline-danger" type="reset" value="Cancelar">
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+        
+    </body>
+</html>
